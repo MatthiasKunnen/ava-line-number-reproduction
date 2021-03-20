@@ -1,7 +1,5 @@
-import test, {Macro} from 'ava';
+import test from 'ava';
 
-const macro: Macro<[number]> = (t, number) => {
-    t.is(number, 5);
-}
+import {macro} from '../helper/macro';
 
 test('Number must be 5', macro, 4);
